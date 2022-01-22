@@ -153,17 +153,17 @@ def create_contact_req():
         response = controller.create_contact_req(request.json)
         return json_response(response)
 
-@app.route('/api/test', methods=['POST'])
-def creat():
-    # Если в запросе нет данных или неверный заголовок запроса (т.е. нет 'application/json'),
-    # или в данных нет обязательного поля 'firstname' или 'lastname'
-    # if not request.json or not 'firstname' or not 'lastname' in request.json:
-    #     # возвращаем стандартный код 400 HTTP-протокола (неверный запрос)
-    #     return bad_request()
-    # # Иначе добавляем запись в БД отправляем json-ответ
-    # else:
-    response = controller.get_contact_req_all(request.json)
-    return json_response(response)
+# @app.route('/api/test', methods=['POST'])
+# def creat():
+#     # Если в запросе нет данных или неверный заголовок запроса (т.е. нет 'application/json'),
+#     # или в данных нет обязательного поля 'firstname' или 'lastname'
+#     # if not request.json or not 'firstname' or not 'lastname' in request.json:
+#     #     # возвращаем стандартный код 400 HTTP-протокола (неверный запрос)
+#     #     return bad_request()
+#     # # Иначе добавляем запись в БД отправляем json-ответ
+#     # else:
+#     response = controller.get_contact_req_all(request.json)
+#     return json_response(response)
 
 @app.route('/api/contactrequest/<int:id>', methods=['PUT'])
 def update_contact_req_by_id(id):

@@ -35,7 +35,7 @@ sendbtn.addEventListener("click", function (e) {
     var formdata = JSON.stringify({ firstname: lfirstname,lastname:llastname, patronymic: lpatronymic, email: lemail, phone: lphone,city:lcity,options:loptions,price:lprice,employee:lemployee})
     var clientdata = JSON.stringify({ firstname: lfirstname,lastname:llastname, patronymic: lpatronymic, email: lemail, phone: lphone})
     var cardata = JSON.stringify({ caption: lcaption,complectation:lcomplectation, color: lcolor, price: lprice})
-    var test = JSON.stringify({'formdata': {formdata}, 'clientdata': {clientdata}, 'cardata': {cardata}});
+    // var test = JSON.stringify({'formdata': {formdata}, 'clientdata': {clientdata}, 'cardata': {cardata}});
     // Отправляем запрос через fetch (необходимо выставить соответствующий заголовок (headers)!)
     fetch("/api/contactrequest",
     {
@@ -108,28 +108,28 @@ sendbtn.addEventListener("click", function (e) {
         console.error('error:', error);
     });
 
-fetch("/api/test",
-{
-    method: "POST",
-    body: test,
-    headers: {
-        'Content-Type': 'application/json'
-    }
-})
-.then( response => {
-    // fetch в случае успешной отправки возвращает Promise, содержащий response объект (ответ на запрос)
-    // Возвращаем json-объект из response и получаем данные из поля message
-    response.json().then(function(data) {
-        console.log(data)
-        let statfield = document.getElementById("statusfield");
-        //statfield.textContent = data.message;
-        //statfield.textContent.bold();
-        alert(test);
-    });
-})
-.catch( error => {
+// fetch("/api/test",
+// {
+//     method: "POST",
+//     body: test,
+//     headers: {
+//         'Content-Type': 'application/json'
+//     }
+// })
+// .then( response => {
+//     // fetch в случае успешной отправки возвращает Promise, содержащий response объект (ответ на запрос)
+//     // Возвращаем json-объект из response и получаем данные из поля message
+//     response.json().then(function(data) {
+//         console.log(data)
+//         let statfield = document.getElementById("statusfield");
+//         //statfield.textContent = data.message;
+//         //statfield.textContent.bold();
+//         alert(test);
+//     });
+// })
+// .catch( error => {
    
-});
+// });
 
     
   
