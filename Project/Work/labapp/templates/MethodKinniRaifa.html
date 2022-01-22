@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block head %}
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+        <link rel="stylesheet" href="static/stylesheets/contactUs/style.css">
+{% endblock %}
+    {% block cont %}
+        <div class="customer-data">
+                <div class="customer__title"><h2>Данные водителя</h2></div>
+                <form class="customer__form">
+                        <div class="form__item">
+                            <div class="form__label">Число дополнительных водителей</div>
+                                <input list="id10" name="extraDriversCount" placeholder="Выберите число дополнительных водителей">
+                                <datalist id="id10">
+                                <option value="0"></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4+"></option>
+                                    </datalist>
+                            </div>
+                        <div class="form__item">
+                            <div class="form__label">Цвет</div>
+                                 <input list="id20" name="carColor" placeholder="Выберите цвет">
+                                <datalist id="id20">
+                                <option value="светлый тон не металлик"></option>
+                                <option value="цветной тон не металлик"></option>
+                                <option value="темный тон не металлик"></option>
+                                <option value="металлик"></option>
+                                    </datalist>
+                        </div>
+                              <div class="form__item">
+                                  <div class="form__label">Число лет без аварий</div>
+                               <input list="id30" name="noCrashYear" placeholder="Выберите число лет без аварий">
+                                <datalist id="id30">
+                                <option value="0"></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4+"></option>
+                                    </datalist>
+                        </div>
+                    <div class="form__item">
+                                  <div class="form__label">Тарифная стоимость страховки в вашем городе</div>
+                               <input list="id40" name="rate" placeholder="Выберите тарифную стоимость">
+                                <datalist id="id40">
+                                <option value="8000"></option>
+                                <option value="12000"></option>
+                                <option value="16000"></option>
+                                    </datalist>
+                        </div>
+                        <div class="form__item">
+                                <div class="form__label">Возраст водителя</div>
+                                <input name="driverAge" class="form__input" type="text" >
+                        </div>
+                       <div class="form__item">
+                                <div class="form__label">Cтаж водителя</div>
+                                <input name="experience" class="form__input" type="text" >
+                        </div>
+                        <div class="form__item">
+                                <div class="form__label">Возраст автомобиля</div>
+                                <input name="carAge" class="form__input" type="text" >
+                        </div>
+                    <div class="form__item">
+                                <div class="form__label">Цена автомобиля</div>
+                                <input name="carPrice" class="form__input" type="text" >
+                        </div>
+                    <button id="sendbtn" type="button" class="contract__button">Рассчитать</button>
+                </form>
+        <script type="module"  src="static/javascripts/methodKinniRaifa/sketch.js"></script>
+    {% endblock %}
+
+    <!-- type="text/javascript" -->

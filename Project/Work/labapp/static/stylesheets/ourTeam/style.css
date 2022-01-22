@@ -1,0 +1,135 @@
+/* -----Обнуление----- */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #000 !important;
+    text-decoration: none
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+.main__title {
+    font-size: 36px;
+    margin: 10px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+ }
+.customer-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customer__title {
+    font-size: 28px;
+}
+.customer__form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
+    grid-row-gap: 10px;
+    grid-column-gap: 6em;
+}
+.form__input {
+    height: 40px; 
+    width: 400px;
+    border-radius: 10px; 
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color:  #c4c5d642;   
+}
+.form__label {
+    font-style: italic;    
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px 0px 5px 10px;
+}
+.section-info {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.car-data {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+}
+.last-data {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50px 50px 50px;
+    /* grid-template-rows: 1fr 1fr; */
+}
+.info {
+    display: flex;
+    justify-content: start;
+    margin: 10px;    
+}
+.info_date {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.info_price {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.info__item {
+    margin-left: 20px;
+    
+}
+.contract__button {
+    font-size: 20px; 
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px; 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    width: 195px;
+    height: 40px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+}
+.disp-none {
+    display: none;
+}

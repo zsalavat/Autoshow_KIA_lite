@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block cont%}
+    <link rel="stylesheet" href="static/stylesheets/contactUs/style.css">
+    <form class="worker__form" method="POST" action="/login">
+        <div class="auth-form_log">
+            <p><input class="form__input" name="loginField" type="text" placeholder="Login"></p>
+            <p><input class="form__input" name="passField" type="password" placeholder="Password"></p>
+            <button id="sendbtn" class="contract__button" type="submit" id="sendbtn">Войти</button>
+            <button class="contract__button" type="submit" id="sendreq" name="regBtn" value="true">Регистрация</button>
+        </div>
+    </form>
+        <script type="text/javascript" src="static/javascripts/login/setlogin.js"></script>
+{% endblock %}

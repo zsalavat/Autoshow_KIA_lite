@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block head %}
+        <link rel="stylesheet" href="static/stylesheets/contactUs/style.css">
+        <script type="text/javascript" src="static/javascripts/contactUs/r.js"></script>
+{% endblock %}
+{% block cont %}
+    <div class="container">
+        <div class="customer-data">
+                <div class="customer__title"><h2>Данные клиента</h2></div>
+                <form class="customer__form">
+                        <div class="form__item">
+                                <div class="form__label">Фамилия</div>
+                                <input name="flastname" class="form__input"  type="text" placeholder="Иванов">
+                        </div>
+                        <div class="form__item">
+                                <div class="form__label">Отчество</div>
+                                <input name="fpatronymic" class="form__input"  type="text" placeholder="Иванович">
+                        </div>
+                              <div class="form__item">
+                                <div class="form__label">Имя</div>
+                                <input name="ffirstname" class="form__input"  type="text" placeholder="Иван">
+                        </div>
+                        <div class="form__item">
+                                <div class="form__label">Номер телефона</div>
+                                <input name="fphone"class="form__input" type="text" placeholder="+7-(...)-...-..-..">
+                        </div>
+                        <div class="form__item">
+                                <div class="form__label">Город</div>
+                                <input name="fcity" class="form__input" placeholder="г. Уфа">
+                        </div>
+                        <div class="form__item">
+                                <div class="form__label">Электронная почта</div>
+                                <input name="femail" class="form__input" placeholder="tensor@mail.com">
+                        </div>
+
+                </form>
+        </div>
+        <div class="section-info">
+                <div class="car-data">
+                        <div class="car-data__title"><h2>Данные транспортного средства:</h2></div>
+                        <div class="car-data__info">
+                                <!-- <div class="info">
+                                        <div class="info__title">Марка:</div>
+                                        <div class="info__item">KIA</div>
+                                </div> -->
+                                <div class="info">
+                                        <div class="info__title">Модель:</div>
+                                    <div class="info__item"><div class="info__model">basemodel</div></div>
+                                </div>
+                                <div class="info">
+                                        <div class="info__title">Комплектация:</div>
+                                    <div class="info__item"><div class="info__complectation">basecomplectation</div></div>
+                                </div>
+                                <div class="info">
+                                        <div class="info__title">Цвет:</div>
+                                    <div class="info__item"><div class="info__color">basecolor</div></div>
+                                </div>                                
+                        </div>
+                </div>
+                <div class="last-data">
+                        <div class="form__item options">
+                            <div class="form__label">Дополнительные опции:</div>
+                             <div class="info__item"><div class="info__options">basemodel</div></div>
+                        </div>
+                        <div class="form__item worker-info">
+                            <div class="form__label">Сотрудник автосалона:</div>
+                            <div class="info__item"><div class="login"></div></div>
+                        </div>
+                        <div class="info info_price">
+                                <div class="info__title">Итоговая стоимость:</div>
+                            <div class="info__item"> <div class="info__price">baseprice</div></div>
+                        </div>
+                        <div class="info info_date">
+                                <div class="info__title">Дата:</div>
+                            <div class="info__item"><div class="dateNow"></div></div>
+                        </div>
+                    <button id="sendbtn" class="contract__button">Отправить</button>
+                        <a class="print" href="#" onclick="window.print();return false;">Распечатать</a>
+                </div>
+            <a href="../insurance">Страхование</a>
+        </div>
+
+
+    </div>
+        
+        <script type="text/javascript" src="static/javascripts/contactUs/formsend.nodejs"></script>
+        
+
+{% endblock %}

@@ -1,0 +1,24 @@
+.header__list li:nth-child(2) a{
+   color:#2980b9;
+}
+.cont{
+    text-align:center;
+}
+.article{
+    flex: 0 0 450px;
+}
+.article__wrapper{
+    display: flex;
+}
+.article__img{
+    margin-right: 20px;
+}
+.article__img img{
+    max-width:40px;
+    max-height:40px;
+    min-height:40px;
+}
+.article__subtitle,.article__text{
+    text-align: left;
+}
+

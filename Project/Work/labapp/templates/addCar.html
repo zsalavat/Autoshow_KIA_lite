@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block cont %}
+    <link rel="stylesheet" href="static/stylesheets/contactUs/style.css">
+    <div class="popup">
+        <p id="popup-txt">
+        </div>
+                <form class="main__form" action="#">
+            <p class="main__form-item">Название модели:
+                <input name="fcaption" value="" type="text" size="40">
+               </p>
+               <p class="main__form-item">Комплектация:
+                <input name="fcomplectation" type="text" size="40">
+               </p>
+               <p class="main__form-item">Цвет:
+                <input name="fcolor" type="email" size="40">
+                </p>
+                <p class="main__form-item">Стоимость:
+                <input name="fprice" type="email" size="40">
+                </p>
+                <input  id="sendbtn" type="submit" value="Отправить">
+        </form>
+    </main>
+        <script type="text/javascript" src="static/javascripts/AddCar/formsend.js"></script>
+{% endblock %}

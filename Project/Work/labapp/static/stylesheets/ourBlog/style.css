@@ -1,0 +1,18 @@
+.header__list li:nth-child(1) a{
+   color:#2980b9;
+}
+.article__text{
+display: none;
+}
+.article__link{
+display: none;
+}
+.article__text.active{
+    display: block;
+    }
+.article__link.active{
+   display: inline;
+ }
+.main__list{
+    color:orange;
+}

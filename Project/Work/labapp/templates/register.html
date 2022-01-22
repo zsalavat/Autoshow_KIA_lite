@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block cont %}
+<link rel="stylesheet" href="static/stylesheets/contactUs/style.css">
+    <form class="worker__form" method="POST" action="/register">
+        <div class="auth-form">
+            <p><input class="form__input" name="loginField" type="text" placeholder="Login"></p>
+            <p><input class="form__input" name="passField" type="password" placeholder="Password"></p>
+            <p><input class="form__input" name="emailField" type="email" placeholder="Email"></p>
+            <button class="contract__button" type="submit" id="sendbtn">Зарегистрировать</button>
+        </div>
+    </form>
+
+{% endblock %}

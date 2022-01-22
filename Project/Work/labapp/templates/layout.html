@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+            <meta charset="utf-8">
+            <title>{{title}}</title>
+            <link rel="stylesheet" href="/static/stylesheets/layout/reset.css">
+            <link rel="stylesheet" href="/static/stylesheets/layout/style.css">
+            <script type="text/javascript" src="/static/javascripts/layout/jquery-3.6.0.min.js"></script>
+            {% block head %}{% endblock %}
+    </head>
+
+		<body>
+    <header class="header">
+        <div class="content">
+        <div class="header__body">
+        <nav class="header__menu">
+            <ul class="header__list">
+             <li><a href="../portfolio">Kia Motors</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    </header>
+     <main class="main">
+     <section>
+            <h1><div class="main__title">{{ main__title }}</div></h1>
+<div class="main__decor">
+    <hr>
+</div>
+<div class="main__text">{{main__text}}</div>
+     </section>
+					{% block cont %}{% endblock %}
+ </main>
+<footer class="footer">
+<div class="content">
+    <div class="footer__body">
+<div class="footer__list">
+    <a href="http://www.rss.ru" class="footer__icon"><img src="/static/images/layout/2.png" alt=""></a>
+    <a href="https://twitter.com" class="footer__icon"><img src="/static/images/layout/3.png" alt=""></a>
+    <a href="https://ru-ru.facebook.com" class="footer__icon"><img src="/static/images/layout/4.png" alt=""></a>
+    <a href="https://www.google.ru" class="footer__icon"><img src="/static/images/layout/5.png" alt=""></a>
+    <a href="https://www.pinterest.ru" class="footer__icon"><img src="/static/images/layout/6.png" alt=""></a>
+</div>
+<div class="footer__text">© 2021 </div>
+</div>
+</div>
+</footer>
+		</body>
+</html>
